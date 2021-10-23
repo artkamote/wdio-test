@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:latest
 
 ENV PYTHON=/usr/bin/python3 NODE_PATH=/node_modules
 

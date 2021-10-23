@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  system-test-runner:
+    #image: artcuaresma/webdriverio-testrunner:7.0
+    image: art-testrunner
+    volumes:
+      - .:/qa-tech-challenge
+    working_dir: /qa-tech-challenge
+    env_file: .env
+    depends_on:
+      - selenium
+
+  selenium:
+    image: selenium/standalone-chrome-debug:latest
+    environment:
+      - VNC_NO_PASSWORD=1
+    ports:
+      - 4444 # Selenium server
+      - 5900 # VNC server

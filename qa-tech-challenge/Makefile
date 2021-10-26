@@ -38,9 +38,8 @@ _clean:
 # System Tests       #
 ######################
 
-systemTests:
-	docker-compose run --rm system-test-runner bash -c "yarn install && yarn run system-test"
-
+systemtests:$(DOTENV_TARGET)
+	docker-compose run --rm system-test-runner
 
 shellSystemTests:
 	docker-compose run --rm system-test-runner bash

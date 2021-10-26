@@ -1,7 +1,7 @@
 var simOnlyPage = require('../pages/simonlyPage');
 var apiNewServiceType = require('../api/getService');
 
-process.env.API_URL = 'https://api-prod.prod.cms.df.services.vodafone.com.au/plan/postpaid-simo?serviceType=New'
+//process.env.API_URL = 'https://api-prod.prod.cms.df.services.vodafone.com.au/plan/postpaid-simo?serviceType=New'
 
 let apiNewPlans
 describe('validate plan',  () => {

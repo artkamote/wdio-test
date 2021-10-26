@@ -1,4 +1,4 @@
-process.env.TEST_BASE_URL = 'https://www.vodafone.com.au'
+// process.env.TEST_BASE_URL = 'https://www.vodafone.com.au'
 
 /* global browser */
 // const video = require('wdio-video-reporter')
@@ -10,6 +10,7 @@ exports.config = {
     // Runner Configuration
     // ====================
     //
+     runner: 'local',
     //
     // ==================
     // Specify Test Files
